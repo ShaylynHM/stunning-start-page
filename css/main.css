@@ -113,3 +113,37 @@ section ul li {
   "middle"
   "bottom";
 }
+
+section h3 {
+  grid-area: bottom;
+  z-index: 1;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 1.125rem;
+  background-color: rgba(255, 0, 0, 0.1);
+}
+
+section li > img {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+}
+
+section div {
+  grid-area: top;
+
+  display: flex;
+  flex-direction: row-row-reverse;
+  align-items: center;
+  justify-self: end;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 1em 0 0 1em;
+  padding: 0 .5em;
+  margin: .5em 0 0;
+  font-style: italic;
+}
+
+section div img {
+  width: 1em;
+  height: 1em;
+  margin-right: .5;
+}
